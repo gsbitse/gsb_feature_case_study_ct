@@ -24,7 +24,7 @@ function gsb_feature_case_study_ct_node_info() {
       'base' => 'node_content',
       'description' => t('Add a Case Study'),
       'has_title' => '1',
-      'title_label' => t('Case Title'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );
