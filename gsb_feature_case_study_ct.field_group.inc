@@ -13,15 +13,15 @@ function gsb_feature_case_study_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_taxonomy|node|case_study|form';
-  $field_group->group_name = 'group_taxonomy';
+  $field_group->identifier = 'group_tags_wrapper|node|case_study|default';
+  $field_group->group_name = 'group_tags_wrapper';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'case_study';
-  $field_group->mode = 'form';
+  $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Taxonomy',
-    'weight' => '7',
+    'label' => 'Tags',
+    'weight' => '4',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_business_insight_topic',
@@ -32,17 +32,21 @@ function gsb_feature_case_study_ct_field_group_info() {
       6 => 'field_tag',
       7 => 'field_target_audience',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Tags',
       'instance_settings' => array(
-        'description' => '',
         'classes' => '',
-        'required_fields' => 1,
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
+      'formatter' => 'open',
     ),
   );
-  $export['group_taxonomy|node|case_study|form'] = $field_group;
+  $export['group_tags_wrapper|node|case_study|default'] = $field_group;
 
   return $export;
 }
