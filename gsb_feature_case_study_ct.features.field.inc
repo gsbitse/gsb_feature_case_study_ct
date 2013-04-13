@@ -74,10 +74,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -162,10 +167,13 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '5',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -268,10 +276,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -358,7 +371,7 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -446,10 +459,13 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '3',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -550,10 +566,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '14',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -649,10 +670,19 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'inline',
+          'module' => 'date',
+          'settings' => array(
+            'conditions' => array(),
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => '1',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -758,10 +788,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '16',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -852,7 +887,7 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -951,10 +986,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '15',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1033,10 +1073,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'gsb_field_formatter',
+          'settings' => array(
+            'conditions' => array(),
+            'separator' => ', ',
+            'view_mode' => 'full',
+          ),
+          'type' => 'gsb_field_formatter_field_collection_separator',
+          'weight' => '4',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1130,10 +1175,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '11',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1227,10 +1277,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '10',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1326,10 +1381,15 @@ function gsb_feature_case_study_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '9',
         ),
         'tiny' => array(
           'label' => 'above',
