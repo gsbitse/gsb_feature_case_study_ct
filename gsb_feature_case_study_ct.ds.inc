@@ -12,6 +12,42 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_person_fac_student_other|default';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_person_fac_student_other';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'field_first_name' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => 'name-first',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_last_name' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => 'name-last',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['field_collection_item|field_person_fac_student_other|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|case_study|business_insight';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'case_study';
@@ -67,7 +103,15 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
     'field_person_fac_student_other' => array(
       'formatter_settings' => array(
         'ft' => array(
+          'func' => 'theme_ds_field_expert',
           'lb' => 'By',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -111,6 +155,40 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
  */
 function gsb_feature_case_study_ct_ds_layout_settings_info() {
   $export = array();
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'field_collection_item|field_person_fac_student_other|default';
+  $ds_layout->entity_type = 'field_collection_item';
+  $ds_layout->bundle = 'field_person_fac_student_other';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_wrapper_tags',
+        1 => 'group_wrapper_name',
+        2 => 'field_first_name',
+        3 => 'field_person_fac_student_ref',
+        4 => 'field_last_name',
+      ),
+    ),
+    'fields' => array(
+      'group_wrapper_tags' => 'ds_content',
+      'group_wrapper_name' => 'ds_content',
+      'field_first_name' => 'ds_content',
+      'field_person_fac_student_ref' => 'ds_content',
+      'field_last_name' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'span',
+    ),
+    'layout_wrapper' => 'span',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+  );
+  $export['field_collection_item|field_person_fac_student_other|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
