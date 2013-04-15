@@ -57,7 +57,7 @@ function gsb_feature_case_study_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '4',
+    'weight' => '10',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_business_insight_topic',

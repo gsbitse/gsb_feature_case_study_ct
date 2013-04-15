@@ -14,6 +14,7 @@ dependencies[] = field_collection
 dependencies[] = field_group
 dependencies[] = file
 dependencies[] = gsb_feature_research_paper_ct
+dependencies[] = gsb_feature_research_paper_display
 dependencies[] = gsb_field_formatter
 dependencies[] = hs_taxonomy
 dependencies[] = link

@@ -19,13 +19,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'default' => array(
@@ -98,13 +93,9 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-          'trim_length' => 150,
-        ),
-        'type' => 'text_trimmed',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -181,13 +172,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'default' => array(
@@ -262,7 +248,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 12,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -327,10 +313,14 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'business_insight' => array(
-        'label' => 'inline',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
+        'label' => 'hidden',
+        'module' => 'gsb_feature_research_paper_display',
+        'settings' => array(
+          'conditions' => array(),
+          'view_mode' => 'research_pager',
+        ),
+        'type' => 'gsb_research_papers_formatter',
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'inline',
@@ -405,13 +395,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 9,
       ),
       'default' => array(
@@ -496,7 +481,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'inline',
@@ -588,13 +573,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'default' => array(
@@ -668,7 +648,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 11,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -738,13 +718,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 10,
       ),
       'default' => array(
@@ -816,10 +791,17 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'business_insight' => array(
-        'label' => 'inline',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'conditions' => array(),
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+        ),
+        'type' => 'field_collection_list',
+        'weight' => 0,
       ),
       'default' => array(
         'label' => 'inline',
@@ -891,13 +873,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'default' => array(
@@ -970,13 +947,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 8,
       ),
       'default' => array(
@@ -1051,13 +1023,8 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'default' => array(
