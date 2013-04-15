@@ -52,6 +52,15 @@ function gsb_feature_case_study_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'business_insight' => array(
+        'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'people_fpp' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
