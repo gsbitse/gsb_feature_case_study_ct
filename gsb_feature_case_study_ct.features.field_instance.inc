@@ -123,8 +123,9 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
+          'trim_length' => 150,
         ),
-        'type' => 'text_default',
+        'type' => 'text_trimmed',
         'weight' => 5,
       ),
       'tiny' => array(
@@ -831,7 +832,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'separator' => ', ',
+          'separator' => ';',
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_field_collection_separator',

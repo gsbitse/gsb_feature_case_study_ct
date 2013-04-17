@@ -129,19 +129,39 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
       'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h3',
+        'class' => '',
+        'ft' => array(),
+        'conditions' => array(),
+      ),
     ),
     'field_case_study_number' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_minimal',
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => 'paper-code',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
     'field_date_published' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'DATE POSTED',
+          'func' => 'theme_ds_field_minimal',
+          'lb' => 'Date posted',
+          'lb-col' => TRUE,
         ),
+      ),
+    ),
+    'field_person_fac_student_other' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
   );
