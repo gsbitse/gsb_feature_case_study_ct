@@ -68,7 +68,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_academic_area_single',
     'label' => 'Academic Area',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -222,7 +222,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
     'label' => 'Business Insight Topic',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -623,7 +623,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_discipline',
     'label' => 'Discipline',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -768,7 +768,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_industry',
     'label' => 'Industry',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1073,7 +1073,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_target_audience',
     'label' => 'Target Audience',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
