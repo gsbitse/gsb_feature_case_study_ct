@@ -121,10 +121,10 @@ function gsb_feature_case_study_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'case_study';
   $field_group->mode = 'teaser';
-  $field_group->parent_name = 'group_content_wrapper';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_business_insight_topic',

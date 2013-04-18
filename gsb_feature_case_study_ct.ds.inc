@@ -126,7 +126,7 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '2',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -311,13 +311,13 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'group_content_wrapper',
-        1 => 'field_date_published',
-        2 => 'title',
-        3 => 'field_case_study_number',
-        4 => 'field_person_fac_student_other',
-        5 => 'field_body',
-        6 => 'group_tags_wrapper',
+        0 => 'field_date_published',
+        1 => 'title',
+        2 => 'field_case_study_number',
+        3 => 'field_person_fac_student_other',
+        4 => 'field_body',
+        5 => 'group_tags_wrapper',
+        6 => 'group_content_wrapper',
         7 => 'field_target_audience',
         8 => 'field_tag',
         9 => 'field_region',
@@ -329,13 +329,13 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'group_content_wrapper' => 'ds_content',
       'field_date_published' => 'ds_content',
       'title' => 'ds_content',
       'field_case_study_number' => 'ds_content',
       'field_person_fac_student_other' => 'ds_content',
       'field_body' => 'ds_content',
       'group_tags_wrapper' => 'ds_content',
+      'group_content_wrapper' => 'ds_content',
       'field_target_audience' => 'ds_content',
       'field_tag' => 'ds_content',
       'field_region' => 'ds_content',

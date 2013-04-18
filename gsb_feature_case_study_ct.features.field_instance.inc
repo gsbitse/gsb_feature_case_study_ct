@@ -126,7 +126,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
           'trim_length' => 150,
         ),
         'type' => 'text_trimmed',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -351,7 +351,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -524,7 +524,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -836,7 +836,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_field_collection_separator',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'tiny' => array(
         'label' => 'above',
