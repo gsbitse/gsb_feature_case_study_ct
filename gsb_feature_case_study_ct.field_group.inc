@@ -56,7 +56,7 @@ function gsb_feature_case_study_ct_field_group_info() {
   $field_group->mode = 'business_insight';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Tags wrapper',
+    'label' => 'Tags:',
     'weight' => '10',
     'children' => array(
       0 => 'field_academic_area_single',
@@ -106,6 +106,8 @@ function gsb_feature_case_study_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Tags:',
       'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
         'classes' => 'case-study',
       ),
       'formatter' => 'open',
@@ -140,6 +142,8 @@ function gsb_feature_case_study_ct_field_group_info() {
       'label' => 'Tags:',
       'instance_settings' => array(
         'classes' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
       ),
       'formatter' => 'open',
     ),
