@@ -71,10 +71,10 @@ function gsb_feature_case_study_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '10',
         ),
         'workbench_access' => array(
-          'weight' => '17',
+          'weight' => '18',
         ),
       ),
       'display' => array(),

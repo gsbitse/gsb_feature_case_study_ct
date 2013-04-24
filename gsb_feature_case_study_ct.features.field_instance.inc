@@ -79,7 +79,64 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 8,
+      'weight' => 7,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-case_study-field_addthis'
+  $field_instances['node-case_study-field_addthis'] = array(
+    'bundle' => 'case_study',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'business_insight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addthis_displays',
+        'settings' => array(
+          'buttons_size' => 'addthis_16x16_style',
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
+          'counter_orientation' => 'horizontal',
+          'extra_css' => '',
+          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
+        ),
+        'type' => 'addthis_basic_toolbox',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_addthis',
+    'label' => 'AddThis',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(
+        'maxlength_js_label' => '',
+      ),
+      'type' => 'addthis_button_widget',
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -233,7 +290,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -458,7 +515,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -634,7 +691,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 10,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -934,7 +991,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 12,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -1010,7 +1067,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -1084,7 +1141,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 13,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -1093,6 +1150,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Abstract Text');
   t('Academic Area');
+  t('AddThis');
   t('At Harvard');
   t('Authors');
   t('Business Insight Topic');
