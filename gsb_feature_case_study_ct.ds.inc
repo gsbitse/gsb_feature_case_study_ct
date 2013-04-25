@@ -23,8 +23,8 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => 'name-first',
-          'ow-def-cl' => FALSE,
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -36,8 +36,8 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => 'name-last',
-          'ow-def-cl' => FALSE,
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -57,6 +57,47 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
       'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'span',
+        'class' => '',
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
+    'field_case_study_number' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_date_published' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
     ),
   );
   $export['node|case_study|business_insight'] = $ds_fieldsetting;
@@ -186,19 +227,17 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'group_wrapper_tags',
-        1 => 'group_wrapper_name',
-        2 => 'field_first_name',
+        0 => 'field_first_name',
+        1 => 'field_last_name',
+        2 => 'group_wrapper_name',
         3 => 'field_person_fac_student_ref',
-        4 => 'field_last_name',
       ),
     ),
     'fields' => array(
-      'group_wrapper_tags' => 'ds_content',
-      'group_wrapper_name' => 'ds_content',
       'field_first_name' => 'ds_content',
-      'field_person_fac_student_ref' => 'ds_content',
       'field_last_name' => 'ds_content',
+      'group_wrapper_name' => 'ds_content',
+      'field_person_fac_student_ref' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -224,15 +263,15 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
       ),
       'right' => array(
         1 => 'title',
-        2 => 'field_case_study_number',
-        3 => 'field_date_published',
+        2 => 'field_date_published',
+        3 => 'field_case_study_number',
       ),
     ),
     'fields' => array(
       'field_person_fac_student_other' => 'left',
       'title' => 'right',
-      'field_case_study_number' => 'right',
       'field_date_published' => 'right',
+      'field_case_study_number' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
