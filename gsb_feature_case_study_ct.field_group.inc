@@ -158,7 +158,7 @@ function gsb_feature_case_study_ct_field_group_info() {
   $field_group->entity_type = 'field_collection_item';
   $field_group->bundle = 'field_person_fac_student_other';
   $field_group->mode = 'default';
-  $field_group->parent_name = 'group_wrapper_tags';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
     'weight' => '1',
