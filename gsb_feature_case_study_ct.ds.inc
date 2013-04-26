@@ -204,13 +204,7 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_minimal',
           'lb' => 'Date posted',
-          'lb-col' => TRUE,
         ),
-      ),
-    ),
-    'field_person_fac_student_other' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
       ),
     ),
   );
