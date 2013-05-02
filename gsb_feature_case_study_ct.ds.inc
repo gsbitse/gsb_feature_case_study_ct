@@ -121,14 +121,6 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_date_published' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_minimal',
-          'lb' => 'Published',
-        ),
-      ),
-    ),
     'field_file_single_public' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -153,6 +145,14 @@ function gsb_feature_case_study_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_year' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_minimal',
+          'lb' => 'Published',
         ),
       ),
     ),
@@ -229,17 +229,15 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_first_name',
-        1 => 'field_last_name',
-        2 => 'group_wrapper_name',
-        3 => 'field_person_fac_student_ref',
+        0 => 'field_person_fac_student_ref',
+        1 => 'field_first_name',
+        2 => 'field_last_name',
       ),
     ),
     'fields' => array(
+      'field_person_fac_student_ref' => 'ds_content',
       'field_first_name' => 'ds_content',
       'field_last_name' => 'ds_content',
-      'group_wrapper_name' => 'ds_content',
-      'field_person_fac_student_ref' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -298,15 +296,15 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'title',
         1 => 'field_person_fac_student_other',
-        2 => 'field_date_published',
+        2 => 'field_year',
         3 => 'field_case_study_number',
         4 => 'group_tags_wrapper',
         5 => 'field_body',
         6 => 'field_file_single_public',
         7 => 'field_academic_area_single',
         8 => 'field_case_study_at_harvard',
-        9 => 'field_business_insight_topic',
-        10 => 'field_addthis',
+        9 => 'field_addthis',
+        10 => 'field_business_insight_topic',
         11 => 'field_discipline',
         12 => 'field_region',
         13 => 'field_target_audience',
@@ -318,15 +316,15 @@ function gsb_feature_case_study_ct_ds_layout_settings_info() {
     'fields' => array(
       'title' => 'ds_content',
       'field_person_fac_student_other' => 'ds_content',
-      'field_date_published' => 'ds_content',
+      'field_year' => 'ds_content',
       'field_case_study_number' => 'ds_content',
       'group_tags_wrapper' => 'ds_content',
       'field_body' => 'ds_content',
       'field_file_single_public' => 'ds_content',
       'field_academic_area_single' => 'ds_content',
       'field_case_study_at_harvard' => 'ds_content',
-      'field_business_insight_topic' => 'ds_content',
       'field_addthis' => 'ds_content',
+      'field_business_insight_topic' => 'ds_content',
       'field_discipline' => 'ds_content',
       'field_region' => 'ds_content',
       'field_target_audience' => 'ds_content',

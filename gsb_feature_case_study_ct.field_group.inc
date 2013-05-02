@@ -193,11 +193,8 @@ function gsb_feature_case_study_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '',
-    'weight' => '0',
-    'children' => array(
-      0 => 'field_person_fac_student_ref',
-      1 => 'group_wrapper_name',
-    ),
+    'weight' => '3',
+    'children' => array(),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
       'label' => '',
