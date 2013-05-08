@@ -1099,7 +1099,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_popup',
+      'type' => 'date_text',
       'weight' => 3,
     ),
     'workbench_access_field' => 0,
