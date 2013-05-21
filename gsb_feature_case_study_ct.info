@@ -7,6 +7,7 @@ version = 7.x-1.0
 project = gsb_feature_case_study_ct
 dependencies[] = addthis
 dependencies[] = addthis_displays
+dependencies[] = concat_field
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = ds

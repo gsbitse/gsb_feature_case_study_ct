@@ -937,7 +937,7 @@ function gsb_feature_case_study_ct_field_default_field_instances() {
         'field_person_fac_student_other' => 'field_person_fac_student_other',
         'field_region' => 'field_region',
         'field_tag' => 'field_tag',
-        'field_target_audience' => 'field_target_audience',
+        'field_target_audience' => 0,
         'field_year' => 'field_year',
       ),
       'user_register_form' => FALSE,
